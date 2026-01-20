@@ -1,14 +1,18 @@
-<footer class="bg-[#21212e] py-12">
+import React from 'react'
+
+const About = () => {
+  return (
+    <footer class="bg-[#21212e] py-12">
             <div class="container mx-auto px-6 lg:px-12">
                 <div class="grid md:grid-cols-3 gap-8 mb-8">
                     
                     <div>
                         <div class="flex items-center space-x-3 mb-4">
-                            <img src="https://placehold.co/40x40/793fff/ffffff?text=UB" class="h-10 w-10 rounded-full">
+                            <img src="https://placehold.co/40x40/793fff/ffffff?text=UB" class="h-10 w-10 rounded-full"></img>
                             <span class="text-xl font-bold text-white">Uzaib Bashir</span>
                         </div>
                         <p class="text-gray-400 mb-4">
-                            Artist <br>Computer Science and Engineering student <br> Full Stack Developer
+                            Artist Computer Science and Engineering student  Full Stack Developer
                         </p>
                         <div class="flex space-x-4">
                             <a href="https://github.com/UzaibBashir" target="_blank"
@@ -26,8 +30,9 @@
                             </a>
                         </div>
                     </div>
+                    
 
-                    <!-- Quick Links -->
+                    
                     <div>
                         <h3 class="text-white font-bold text-lg mb-4">Quick Links</h3>
                         <ul class="space-y-2">
@@ -46,7 +51,7 @@
                         </ul>
                     </div>
 
-                    <!-- Contact Info -->
+                   
                     <div>
                         <h3 class="text-white font-bold text-lg mb-4">Contact Info</h3>
                         <div class="space-y-2 text-gray-400">
@@ -69,3 +74,8 @@
                 
             </div>
         </footer>
+
+  )
+}
+
+export default About

@@ -1,30 +1,32 @@
 import React from 'react'
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 const Contact = () => {
   return (
-    <section id="contact" className="max-w-3xl mx-auto px-6 py-32 text-center">
+    <section id="contact" className="max-w-6xl mx-auto px-6 p-10 ">
         <div>
-          <h3 class="text-white font-bold text-lg mb-4">Contact Info</h3>
+          <h2 className="text-3xl font-medium mb-6">Contact</h2>
           <div class="space-y-2 text-gray-400">
-              <div class="flex items-center space-x-2">
-                  <i class="bi bi-envelope"></i>
-                  <a
-          href="mailto:youremail@example.com"
-          className="inline-block mt-4 border border-neutral-700 px-6 py-3 rounded-full hover:bg-white hover:text-black transition"
-        >
-          youremail@example.com
-        </a>
-              </div>
-              <div class="flex items-center space-x-2">
-                  <i class="bi bi-geo-alt"></i>
-                  <span>India</span>
-              </div>
-              <div class="flex items-center space-x-2">
-                  <i class="bi bi-clock"></i>
-                  <span>Available for freelance</span>
-              </div>
+            <div class="flex items-center space-x-2">
+              <FaGithub />
+              <span>UzaibBashir</span>
+            </div>
+            <div class="flex items-center space-x-2">
+              <FaLinkedin />
+              <span>Uzaib Bashir</span>
+            </div>
+            <div class="flex items-center space-x-2">
+              <MdEmail />
+              <a href="mailto:youremail@example.com" className="inline-block  border border-neutral-700 px-4  rounded-full hover:bg-neutral-700 hover:text-white transition">Email</a>
+            </div>
+            
           </div>
       </div>
+
+      <div className="flex gap-4 text-2xl">
+
+    </div>
       </section>
   )
 }
